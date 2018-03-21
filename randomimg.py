@@ -1,9 +1,9 @@
 import random as r
+
 # №1
 print ("How many numbers?")
 num = int(input ()) 
-if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100:
-	# print ("Number >  100, enter the number < 100 ")
+if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100:	
 	while num > 100 :
 		if num > 100:
 			print ("Number >  100, enter the number < 100 ")
@@ -29,8 +29,7 @@ elif  tet == "y":
 		for i in range(1):	
 			print( r.randint(0, 1))
 
-elif tet != "y" and tet != "n":
-# else: 
+elif tet != "y" and tet != "n": 
 	while tet != "y" and tet != "n":
 		tet = str(input("Do you want to have fun? (y or n) "))
 		if tet == "n":
