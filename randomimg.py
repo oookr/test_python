@@ -3,10 +3,10 @@ import random as r
 print ("How many numbers?")
 num = int(input ()) 
 if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100:
-	print ("Number >  100, enter the number < 100 ")
+	# print ("Number >  100, enter the number < 100 ")
 	while num > 100 :
 		if num > 100:
-		#	print ("Number >  100, enter the number < 100 ")
+			print ("Number >  100, enter the number < 100 ")
 			print ("How many numbers?")
 		num = int(input ())
 		if num <= 100:
