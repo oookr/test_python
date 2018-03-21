@@ -1,7 +1,7 @@
 import random as r
- 
+# №1
 print ("How many numbers?")
-num = int(input ())
+num = int(input ()) #улучучшить int и num ; else in elif
 if num > 100:
 	print ("Number >  100, enter the number < 100 ")
 	while num > 100 :
@@ -17,25 +17,30 @@ elif num <= 100:
 	for i in range(num):	
 		print( r.randint(0, 1))
 
-
+# №2
 tet = str(input("Do you want to have fun? (y or n) "))
 if tet == "n":
 	print(':(')
 elif  tet == "y":
-	for i in range():	
-		print( r.randint(0, 1))
-else:
-	while tet != "y":
-		while tet != "n":
-			
-			tet = str(input("Do you want to have fun? (y or n) "))
-			if tet == "n":
-				print(':(')
-			elif  tet == "y":
-				for i in range(): #!!!STOP program "Ctrl + C"!!!	#range ()-infinitely ; range (1) - one
+	while tet == "y" :
+		
+		for i in range(1):	
+			print( r.randint(0, 1))
+
+elif tet != "y" and tet != "n":
+# else: 
+	while tet != "y" and tet != "n":
+		tet = str(input("Do you want to have fun? (y or n) "))
+		if tet == "n":
+			print(':(')
+		while tet == "y":
+			if  tet == "y":
+				for i in range(1): #!!!STOP program "Ctrl + C"!!!														|
 					print( r.randint(0, 1))
-		pass	
-	pass
+					# print( r.randint(0, 99999999999999999999999999999999999999999999
+					# 999999999999999999999999999999999999))fun all (bash 80*28)
+	pass	
+		
 
 # tet = str(input("Do you want to have fun? (y or n) "))
 # if tet == "n":
