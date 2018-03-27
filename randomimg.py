@@ -3,7 +3,7 @@ import random as r
 # №1
 print ("How many numbers?")
 num = int(input ()) 
-if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100:	
+if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100: (str)	
 	while num > 100 :
 		if num > 100:
 			print ("Number >  100, enter the number < 100 ")
@@ -11,11 +11,16 @@ if num > 100: # стереть num = int(input ()) и поставить if int(
 		num = int(input ())
 		if num <= 100:
 			for i in range(num):	
+				# print ("Your result:")
 				print( r.randint(0, 1))
 	pass
 elif num <= 100:
 	for i in range(num):	
+		# print ("Your result:")
 		print( r.randint(0, 1))
+
+#! elif num == str(num):
+
 else:
 	print("Error/Ошибка (report it/сообщите о ней)") 
 
