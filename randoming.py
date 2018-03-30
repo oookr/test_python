@@ -1,8 +1,18 @@
 import random as r
+import sys
+
+def check_int(s):
+	try:
+		return int(s)
+	except:
+		print('please enter int')
+		sys.exit()
 
 # №1
 print ("How many numbers?")
-num = int(input ()) 
+num_str = input()
+num = check_int(num_str)
+
 if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100: (str)	
 	while num > 100 :
 		if num > 100:
@@ -20,6 +30,7 @@ elif num <= 100:
 		print( r.randint(0, 1))
 
 #! elif num == str(num):
+
 
 else:
 	print("Error/Ошибка (report it/сообщите о ней)") 
@@ -46,3 +57,5 @@ elif tet != "y" and tet != "n":
 	pass	
 else:
 	print("Error/Ошибка (report it/сообщите о ней)")
+
+
