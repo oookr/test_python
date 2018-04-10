@@ -5,9 +5,16 @@ def check_int(s):
 	try:
 		return int(s)
 	except:
-		print('please enter int')
+		print('please enter an integer!')
 		sys.exit()
 
+def check_str(x):
+	try:
+		return str(x)
+	except:
+		print('please enter an string!')
+		sys.exit()
+	
 # №1
 print ("How many numbers?")
 num_str = input()
@@ -16,27 +23,27 @@ num = check_int(num_str)
 if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100: (str)	
 	while num > 100 :
 		if num > 100:
-			print ("Number >  100, enter the number < 100 ")
+			print ("Number >  100, enter the number < 100")
 			print ("How many numbers?")
-		num = int(input ())
-		if num <= 100:
-			for i in range(num):	
-				# print ("Your result:")
+		num_str = input ()
+		num = check_int(num_str)
+		if num <= 100:	
+			print ("Your result:")
+			for i in range(num):
 				print( r.randint(0, 1))
 	pass
 elif num <= 100:
+	print ("Your result:")
 	for i in range(num):	
-		# print ("Your result:")
+		
 		print( r.randint(0, 1))
-
-#! elif num == str(num):
-
-
 else:
 	print("Error/Ошибка (report it/сообщите о ней)") 
 
 # №2
-tet = str(input("Do you want to have fun? (y or n) "))
+tet_questionable = input("Do you want to have fun? (y or n) ")
+tet = check_str(tet_questionable) 
+
 if tet == "n":
 	print(':(')
 elif  tet == "y":
@@ -47,7 +54,7 @@ elif  tet == "y":
 
 elif tet != "y" and tet != "n": 
 	while tet != "y" and tet != "n":
-		tet = str(input("Do you want to have fun? (y or n) "))
+		tet = str(input("|y or n| "))
 		if tet == "n":
 			print(':(')
 		while tet == "y":
