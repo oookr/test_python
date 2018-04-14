@@ -1,20 +1,8 @@
 import random as r
 import sys
+from import_my import check_str
+from import_my import check_int
 
-def check_int(s):
-	try:
-		return int(s)
-	except:
-		print('please enter an integer!')
-		sys.exit()
-
-def check_str(x):
-	try:
-		return str(x)
-	except:
-		print('please enter an string!')
-		sys.exit()
-	
 # №1
 print ("How many numbers?")
 num_str = input()
