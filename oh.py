@@ -17,6 +17,5 @@ if n < 1000 and n > 0:
 		xq += aq
 		print ("l#",xq)
 	pass
-else :
-	print("Number > 1000 or number < 0, enter the number < 1000 and number > 0!")
-	pass
+elif n > 1000 or n <= 0:
+	print ("Number > 1000 or number < 0, enter the number < 1000 and number > 0!")
