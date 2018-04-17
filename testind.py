@@ -1,3 +1,4 @@
+#1
 ##BUGGG
 # print as p 
 num_1 = float(input ("Entet first num: "))
@@ -9,6 +10,7 @@ print ("Result is two", res2)
 res = float(res1 + res2)
 print ("Sum of results", res) 
 
+#2
 # #In the "C" language, this would not work
 # a = input("a: ")
 # b = input("b: ")
