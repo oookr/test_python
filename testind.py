@@ -8,3 +8,11 @@ res2 = float(num_1 + num_2 + res1)
 print ("Result is two", res2)
 res = float(res1 + res2)
 print ("Sum of results", res) 
+
+# #In the "C" language, this would not work
+# a = input("a: ")
+# b = input("b: ")
+# if a==b:
+# 	print("yep")
+# elif a!=b:
+# 	print("nop")
