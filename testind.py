@@ -31,6 +31,14 @@ if ("mam") in a or ("Mam") in a  or ("Мам")in a or ("мам")in a:
 	#this program assumes that you have a chrome
 	subprocess.Popen(mamka,shell = True)
 	sys.exit()
-b = input ("What kind of letter do you need?")
-if (":") in b :
+elif ("1") in a or ("2") in a or ("3") in a or ("4") in a or ("5") in a or ("6") in a or ("7") in a or ("8") in a or ("9") in a or ("0") in a :
 	print("Hey what's up?")
+	# while :
+	sys.exit()
+b = input ("What kind of letter do you need?")
+if (":") in b:
+	print("Hey what's up?")
+	# while :
+	sys.exit()
+b = check_int(b) 
+
