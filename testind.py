@@ -25,12 +25,10 @@ from import_my import check_int
 
 #3
 #The game guess what a word
-import subprocess
-
-a = input ("Enter the word: ")
-# print (a[0:1])	
+a = input ("Enter the word: ")	
 if ("mam") in a or ("Mam") in a  or ("Мам")in a or ("мам")in a:
 	mamka = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'
+	#this program assumes that you have a chrome
 	subprocess.Popen(mamka,shell = True)
 	sys.exit()
 b = input ("What kind of letter do you need?")
