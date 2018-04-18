@@ -27,12 +27,12 @@ from import_my import check_int
 #The game guess what a word
 import subprocess
 
-a = input ("Введите слово: ")
+a = input ("Enter the word: ")
 # print (a[0:1])	
 if ("mam") in a or ("Mam") in a  or ("Мам")in a or ("мам")in a:
 	mamka = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'
 	subprocess.Popen(mamka,shell = True)
 	sys.exit()
-b = input ("Какая тебе нежна буква ")
+b = input ("What kind of letter do you need?")
 if (":") in b :
-	print("Эй что за дела")
+	print("Hey what's up?")
