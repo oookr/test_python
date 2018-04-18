@@ -15,15 +15,6 @@ from import_my import check_int
 # print ("Sum of results", res) 
 
 #2
-# #In the "C" language, this would not work
-# a = input("a: ")
-# b = input("b: ")
-# if a==b:
-# 	print("yep")
-# elif a!=b:
-# 	print("nop")
-
-#3
 #The game guess what a word
 a = input ("Enter the word: ")	
 if ("mam") in a or ("Mam") in a  or ("Мам")in a or ("мам")in a:
