@@ -16,6 +16,7 @@ from import_my import check_int
 
 #2
 #The game guess what a word
+check_num = ["1","2","3","4","5","6","7","8","9","0"]
 a = input ("Enter the word: ")	
 if ("mam") in a or ("Mam") in a  or ("Мам")in a or ("мам")in a:
 	mamka = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'

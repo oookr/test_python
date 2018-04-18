@@ -2,14 +2,14 @@ import sys
 
 def check_int(s):
 	try:
-		return int(s)
+		return int(s)#and float(x)
 	except:
 		print('please enter an integer!')
 		sys.exit()
 
 def check_str(x):
 	try:
-		return int(x) and float(x)
+		return str(x) 
 	except:
 		print('please enter an string!')
 		sys.exit()
