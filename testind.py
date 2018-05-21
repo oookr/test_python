@@ -20,7 +20,7 @@ from import_my import check_int
 
 a = input ("Enter the word: ")
 
-if ("mam") in a or ("Mam") in a or ("Мам")in a or ("мам")in a or ("mother") in a:
+if ("мамка")in a:
 	mamka = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'	
 	#this program assumes that you have a chrome
 	subprocess.Popen(mamka,shell = True)
