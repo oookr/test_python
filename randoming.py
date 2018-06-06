@@ -25,18 +25,18 @@ elif num <= 100:
 	for i in range(num):	
 		
 		print( r.randint(0, 1))
+	print ("Good \n")
 else:
 	print("Error/Ошибка (report it/сообщите о ней)") 
 
 # №2
-tet_questionable = input("Do you want to have fun? (y or n) ")
+tet_questionable = input("\nDo you want to have fun? (y or n) ")
 tet = check_str(tet_questionable) 
 
 if tet == "n":
 	print(':(')
 elif  tet == "y":
 	while tet == "y" :
-		
 		for i in range(1):	
 			print( r.randint(0, 1))
 
@@ -46,9 +46,8 @@ elif tet != "y" and tet != "n":
 		if tet == "n":
 			print(':(')
 		while tet == "y":
-			if  tet == "y":
-				for i in range(1): #!!!STOP program "Ctrl + C"!!!
-					print( r.randint(0, 1))					
+			for i in range(1): #!!!STOP program "Ctrl + C"!!!
+				print( r.randint(0, 1))					
 	pass	
 else:
 	print("Error/Ошибка (report it/сообщите о ней)")
