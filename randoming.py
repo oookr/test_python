@@ -1,7 +1,7 @@
 import random as r
-import sys
-from import_my import check_str
+
 from import_my import check_int
+from import_my import check_str
 
 # №1
 print ("How many numbers?")
