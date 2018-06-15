@@ -169,3 +169,16 @@ else: # when module is first imported
     # Redirect standard output streams in the process that imported this module.
     sys.stderr = OutputPipe('stderr')
     sys.stdout = OutputPipe('stdout')
+
+
+
+"""very good helper:
+1.1 https://stackoverflow.com/questions/48977473/display-the-output-of-the-program-on-gui-with-tkinter?answertab=votes#tab-top
+1.2 Code derived from Bryan Olson's source posted in this related Usenet discussion:
+https://groups.google.com/d/msg/comp.lang.python/HWPhLhXKUos/TpFeWxEE9nsJ
+https://groups.google.com/d/msg/comp.lang.python/HWPhLhXKUos/eEHYAl4dH9YJ
+2. https://youtu.be/JrWHyqonGj8 (13m19s (From CS50)) "(basis Tkinter)GUI with Python's Tkinter, by Robert Jomar Malate"
+3.1 https://youtu.be/a1Y5e-aGPQ4 (Pillow) "Tkinter adding images and text"
+3.2 https://pythonprogramming.net/tkinter-adding-text-images/ (code)
+4. https://github.com/oookr
+""" 
