@@ -1,4 +1,6 @@
+# import os
 import sys 
+
 
 def check_int(s):
 	try:
@@ -14,9 +16,9 @@ def check_str(x):
 		print('please enter an string!')
 		sys.exit()
 
-def check_num(nu):
+def check_num(num):
 	try:
-		return 1000	> nu
+		return 1000	> num
 	except:
 		print ('Number >  100, enter the number < 100')
 		sys.exit()
