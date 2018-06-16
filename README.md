@@ -1,3 +1,3 @@
 Running the file: <br />
-Python "(file name) + .py" <br />
-example: Pyhton file.py
+Python "file_name + .py" (windows) <br />
+Python3 "file_name + .py" (macintosh)
