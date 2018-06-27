@@ -1,7 +1,5 @@
 from tkinter import *
 
-
-
 tk=Tk()
 tk.title("Calculator")
 
