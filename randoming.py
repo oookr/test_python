@@ -11,27 +11,29 @@ num = check_int(num_str)
 if num > 100: # стереть num = int(input ()) и поставить if int(num) > 100: (str)	
 	while num > 100 :
 		if num > 100:
-			print ("Number >  100, enter the number < 100")
-			print ("How many numbers?")
-		num_str = input ()
-		num = check_int(num_str)
+			num = input ("Number >  100, enter the number < 100\nHow many numbers?\n")
+			num = check_int(num)
 		if num <= 100:	
 			print ("Your result:")
 			for i in range(num):
 				print( r.randint(0, 1))
+			print ("\n___Good___\n")
 	pass
+
 elif num <= 100:
 	print ("Your result:")
 	for i in range(num):	
 		
 		print( r.randint(0, 1))
-	print ("Good \n")
+	print ("\n___Good___\n")
+
 else:
-	print("Error/Ошибка (report it/сообщите о ней)") 
+	print("Error/Ошибка") 
+
 
 # №2
-tet_questionable = input("\nDo you want to have fun? (y or n) ")
-tet = check_str(tet_questionable) 
+tet = input("\nDo you want to have fun? (y or n) ")
+tet = check_str(tet) 
 
 if tet == "n":
 	print(':(')
@@ -50,6 +52,6 @@ elif tet != "y" and tet != "n":
 				print( r.randint(0, 1))					
 	pass	
 else:
-	print("Error/Ошибка (report it/сообщите о ней)")
+	print("Error/Ошибка")
 
 
