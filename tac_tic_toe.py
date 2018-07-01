@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import sys
 
 tk=Tk()
 tk.title("Tic Tac Toe")
@@ -28,7 +29,7 @@ def ttt(buttons):
           button2['text'] == 'X' and button5['text'] == 'X' and button8['text'] == 'X'or
           button7['text'] == 'X' and button6['text'] == 'X' and button9['text'] == 'X'):
           messagebox.showinfo("Player X",'Winner is X !!!!')
- 
+          sys.exit()
      elif(button1['text'] == 'O' and button2['text'] == 'O' and button3['text'] == 'O'or
           button4['text'] == 'O' and button5['text'] == 'O' and button6['text'] == 'O'or
           button7['text'] == 'O' and button8['text'] == 'O' and button9['text'] == 'O'or
@@ -39,7 +40,7 @@ def ttt(buttons):
           button2['text'] == 'O' and button5['text'] == 'O' and button8['text'] == 'O'or
           button7['text'] == 'O' and button6['text'] == 'O' and button9['text'] == 'O'):
           messagebox.showinfo("Player O",'Winner is O !!!!')  
-
+          sys.exit()
 
 buttons=StringVar()
 
