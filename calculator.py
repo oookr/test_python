@@ -73,10 +73,10 @@ plus= Button(below, text="+", padx= 16, bg='#FA7D0F',fg='white',pady=1,
 #=========================================================================
 
 btn0= Button(below, text="0", padx= 16,bg='#C0C0C0',fg='#0f0f0f',pady=1,
-				bd=4 ,font=('arial', 16, 'bold'),height=2,width=2).grid(row=5, column=0)
+				bd=4 ,font=('arial', 16, 'bold'),height=2,width=8).place(x=-1,y=280)
 
-btn00= Button(below, text="0", padx= 16,bg='#C0C0C0',fg='#0f0f0f',pady=1,
-				bd=4 ,font=('arial', 16, 'bold'),height=2,width=2).grid(row=5, column=1)
+# btn00= Button(below, text="0", padx= 16,bg='#C0C0C0',fg='#0f0f0f',pady=1,
+# 				bd=4 ,font=('arial', 16, 'bold'),height=2,width=2).grid(row=5, column=1)
 
 point= Button(below, text=".", padx= 16,bg='#C0C0C0',fg='#0f0f0f',pady=1,
 				bd=4 ,font=('arial', 16, 'bold'),height=2,width=2,justify='left').grid(row=5, column=2)
