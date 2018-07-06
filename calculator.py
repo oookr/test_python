@@ -23,7 +23,7 @@ def btnEqual():
 	global operator
 	sumup = str(eval(operator))
 	text_Input.set(sumup)
-	operator = ""
+	operator = sumup
 # def percent
 # def PM ():
 # 	global operator
@@ -90,6 +90,7 @@ point= Button(below, text=".",command=lambda:btnClick("."), padx= 16,bg='#C0C0C0
 point.grid(row=5, column=2)
 equal= Button(below, text="=",command=lambda:btnEqual(), padx= 16, bg='#F9790E',fg='white',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
 equal.grid(row=5, column=3)
+
 
 
 
