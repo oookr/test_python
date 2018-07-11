@@ -37,12 +37,12 @@ text_Input=StringVar()
 # from tkinter import messagebox
 # import sys
 # txt = txtDisplay
-# if txt == "∕0" or txt == "⁄0"  or txt == "÷0" or txt == "∶0":
+# if txt == "∕0" or txt == "⁄0":
 # 	messagebox.showinfo("Error with zero",'You can not divide by zero !!!')
 # 	sys.exit()
 
 
-txtDisplay= Entry(tops, font= ('arial',18,'bold'), textvariable=text_Input, width= 21,bd=4 , justify='right')
+txtDisplay= Entry(tops, font= ('arial',18,'bold'), bg="#202020", fg="white", textvariable=text_Input, width= 21 ,bd=4 , justify='right' )
 txtDisplay.grid(row = 0, column = 0)
 
 btn10 = Button(below, text="C",command=lambda:btnClear(), padx= 16, bg='#C0C0C0', fg='#0f0f0f',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
@@ -52,7 +52,7 @@ btn10.grid(row=1, column=0)
 # 	btn10.grid(row=1,column=0)
 PM = Button(below, text="+/-",command=lambda:btnClick("*(-1)"), padx= 16, bg='#C0C0C0', fg='#0f0f0f',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
 PM.grid(row=1, column=1)
-percent = Button(below, text="%",command=lambda:btnClick("%"), padx= 16, bg='#C0C0C0', fg='#0f0f0f',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
+percent = Button(below, text="%",command=lambda:btnClick(""), padx= 16, bg='#C0C0C0', fg='#0f0f0f',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
 percent.grid(row=1, column=2)
 divide = Button(below, text="÷",command=lambda:btnClick("/"), padx= 16, bg='#F99212',fg='white',pady=1,bd=4 ,font=('arial', 16, 'bold'),height=2,width=2)
 divide.grid(row=1, column=3)
