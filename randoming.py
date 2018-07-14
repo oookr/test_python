@@ -1,5 +1,5 @@
 import random as r
-
+import tkinter
 from import_my import check_int
 from import_my import check_str
 
