@@ -1,29 +1,18 @@
 import sys
 import subprocess
-# from import_my import check_int
+from import_my import check_int
+from import_my import check_str2
 
-#1
-##BUGGG
-## print as p 
-# num_1 = float(input ("Entet first num: "))
-# num_2 = float(input ("Entet second num: "))
-# res1 = float(num_1 + num_2)
-# print ("Result is one", res1)
-# res2 = float(num_1 + num_2 + res1)
-# print ("Result is two", res2)
-# res = float(res1 + res2)
-# print ("Sum of results", res)
-
-#2
 #The game guess what a word
 # check_num = ["1","2","3","4","5","6","7","8","9","0"]
 
 a = input ("Enter the word: ")
-mathe=["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
-if ("мамка")in a:
-	mamka = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'	
+# mathe=["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+a = check_str2(a)
+if ("joke")in a:
+	imgJoke = r'start chrome file:///D:/small_work/python_test/img/dumtss.jpg'	
 	#this program assumes that you have a chrome
-	subprocess.Popen(mamka,shell = True)
+	subprocess.Popen(imgJoke,shell = True)
 	sys.exit()
 # elif mathe in a :
 # 	print("Hey what's up?")
