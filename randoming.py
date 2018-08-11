@@ -1,5 +1,5 @@
-import random as r
 from tkinter import*
+import random as r
 
 tk=Tk()
 tk.title("Randoming")
@@ -10,20 +10,22 @@ tops.pack(side=TOP)
 Input_from=StringVar()
 Input_to=StringVar()
 # def res
-c =Label(tops, text ="from:",bg="#85929E",)
-c.grid(row=1, column=0)
-to=Label(tops, text ="to  :",bg="#85929E",)
-to.grid(row=2, column=0)
-ec = Entry(tops, bg="#34495E",textvariable=Input_from)
-ec.grid(row =1, column = 1)
-eto = Entry(tops, bg="#34495E",textvariable=Input_to)
-eto.grid(row =2, column = 1)
+Label_from =Label(tops, text ="from:",bg="#85929E",)
+Label_to=Label(tops, text ="to  :",bg="#85929E",)
+Label_from.grid(row=1, column=0)
+Label_to.grid(row=2, column=0)
+Entry_from = Entry(tops, bg="#34495E",textvariable=Input_from)
+Entry_to = Entry(tops, bg="#34495E",textvariable=Input_to)
+Entry_from.grid(row =1, column = 1)
+Entry_to.grid(row =2, column = 1)
 
 def btnEqual():
-	ec = int(ec)
-	eto = int(eto) 
-	res = r.randint(c, to)
-	res = str(res)
+	Nam_from = Entry_from.get()
+	# Nam_from = int(Nam_from)
+	Nam_to = Entry_to.get()
+	# Nam_to = int(Nam_to)
+	res = r.randint(Nam_from, Nam_to)
+	# res = str(res)
 	tk.messagebox.showinfo("Result", res)
 
 # Input_res=StringVar()
@@ -32,7 +34,7 @@ def btnEqual():
 
 
 
-btn = Button(tops, text="generate", command=lambda:btnEqual(), height=4,width= 15, bg="#3498db")
+btn = Button(tops, text="generate", command=btnEqual(), height=4,width= 15, bg="#3498db")
 btn.grid(row = 3,columnspan=4)
 
 tk.mainloop()
