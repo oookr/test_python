@@ -1,15 +1,15 @@
-from tkinter import*
-import random as r
+from tkinter import *
+from random import randint
 
 tk=Tk()
 tk.title("Randoming")
 tk.geometry()
 
-tops = Frame(tk, width = 50, height= 6,bd=4 ,bg="#85929E" , relief="raise")
-tops.pack(side=TOP)
 Input_from=StringVar()
 Input_to=StringVar()
-# def res
+
+tops = Frame(tk, width = 50, height= 6,bd=4 ,bg="#85929E" , relief="raise")
+tops.pack(side=TOP)
 Label_from =Label(tops, text ="from:",bg="#85929E",)
 Label_to=Label(tops, text ="to  :",bg="#85929E",)
 Label_from.grid(row=1, column=0)
@@ -24,15 +24,9 @@ def btnEqual():
 	# Nam_from = int(Nam_from)
 	Nam_to = Entry_to.get()
 	# Nam_to = int(Nam_to)
-	res = r.randint(Nam_from, Nam_to)
+	res = randint(Nam_from, Nam_to)
 	# res = str(res)
 	tk.messagebox.showinfo("Result", res)
-
-# Input_res=StringVar()
-
-
-
-
 
 btn = Button(tops, text="generate", command=btnEqual(), height=4,width= 15, bg="#3498db")
 btn.grid(row = 3,columnspan=4)
@@ -43,6 +37,11 @@ tk.mainloop()
 import random as r
 s = input("from : ")
 ss= input("to   : ")
-res = r.randint(int(s), int(ss))
+res = randint(int(s), int(ss))
 print (res)
 '''
+
+"""
+https://www.python-course.eu/tkinter_entry_widgets.php
+https://metanit.com/python/tutorial/9.6.php
+"""
