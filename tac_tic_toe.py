@@ -8,7 +8,6 @@ tk.title("Tic Tac Toe")
 bclick = True
           
 def ttt(buttons):
-     WinX = ("Player X",'Winner is X !!!')
      global bclick
      if buttons['text'] == ' '  and bclick == True:
          buttons['text'] = 'X'
@@ -16,9 +15,9 @@ def ttt(buttons):
      elif buttons['text'] == ' ' and bclick == False:
           buttons['text'] = 'O'
           bclick = True
-
+     #Note: When passing 3 iterations, include if: 
      #If you see that you won then press the button twice
-     elif(button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X'or
+     if(button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X'or
           button4['text'] == 'X' and button5['text'] == 'X' and button6['text'] == 'X'or
           button7['text'] == 'X' and button8['text'] == 'X' and button9['text'] == 'X'or
           button1['text'] == 'X' and button5['text'] == 'X' and button9['text'] == 'X'or
