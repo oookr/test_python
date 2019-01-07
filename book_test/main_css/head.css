@@ -1,0 +1,7 @@
+.hero-box {
+    height: 850px;
+    background-color: lightpink;
+    background-image: url(https://www.tesla.com/ns_videos/homepage/homepage-modelx.jpg);
+    background-size: cover;
+    margin: 1%;
+}
