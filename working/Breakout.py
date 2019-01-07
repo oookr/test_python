@@ -2,6 +2,7 @@ from tkinter import *
 import random
 import time
 # from sys import exit
+
 class Ball:
 	def __init__(self, canvas, paddle, color):
 		self.canvas = canvas
@@ -73,3 +74,4 @@ while 1:
 	tk.update_idletasks()
 	tk.update()
 	time.sleep(0.01)
+
