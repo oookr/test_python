@@ -1,8 +1,9 @@
-#Python function
+# Python folder
 __pycache__
 
-#tESTING
-testtest.py
+# Folder for tests
+tested
 
-#Pycharm function
+# PyCharm folder
 .idea
+
