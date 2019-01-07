@@ -1,7 +1,7 @@
 from tkinter import *
 import random
 import time
-from sys import exit
+# from sys import exit
 class Ball:
 	def __init__(self, canvas, paddle, color):
 		self.canvas = canvas
@@ -58,14 +58,14 @@ tk = Tk()
 tk.title("Игра")
 tk.resizable(0, 0)
 tk.wm_attributes("-topmost", 1)
-canvas = Canvas(tk, width=500, height=400, bd=0,
-highlightthickness=0)
+canvas = Canvas(tk, width=500, height=400, bd=0, \
+				highlightthickness=0)
 canvas.pack()
 tk.update()
 paddle = Paddle(canvas, 'blue')
 ball = Ball(canvas, paddle, 'red')
 while 1:
-	if ball.hit_bottom == False:
+	if ball.hit_bottom==False:
 		ball.draw()
 		paddle.draw()
 		# messagebox.showinfo("you lose",'Game over')
