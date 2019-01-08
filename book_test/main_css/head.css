@@ -1,7 +1,7 @@
 .hero-box {
-    height: 850px;
+    height: 709px;
     background-color: lightpink;
-    background-image: url(https://www.tesla.com/ns_videos/homepage/homepage-modelx.jpg);
+    background-image: url(img/000027.jpg);
     background-size: cover;
     margin: 1%;
 }
@@ -14,9 +14,17 @@
 }
 
 .img {
-    color: rgba(74, 74, 74, 0.58);
+    color: #FEFEFE;
     font-size: 55px;
     padding-top: 120px;
     padding-left: 60px;
 }
 
+a {
+	text-decoration: none;
+	color: #2BA273;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
