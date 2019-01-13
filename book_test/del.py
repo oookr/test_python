@@ -11,7 +11,8 @@ while file in os.listdir("."):
 		os.remove(file)
 	# elif the file is not there:
 	except ValueError:
-		question = input("Continue yes or no: ")
+		print(file+"is not in this directory\n")
+		question = input("Do you want to continue, yes or no: ")
 		if "n" in question:
 			exit()
 		elif "y" in question:
