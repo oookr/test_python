@@ -1,7 +1,7 @@
 import os
 from sys import exit
 
-print(" List directory given by path(" + os.getcwd() + "):\n", os.listdir("."), end="\n")
+print("List directory given by path(" + os.getcwd() + "):\n", os.listdir("."), end="\n")
 file = input('The name of the file you want to delete: ')
 
 # Is there a file in the directory?
@@ -11,7 +11,7 @@ while file in os.listdir("."):
 		os.remove(file)
 	# elif the file is not there:
 	except ValueError:
-		print(file+"is not in this directory\n")
+		print(file + " is not in this directory\n")
 		question = input("Do you want to continue, yes or no: ")
 		if "n" in question:
 			exit()
