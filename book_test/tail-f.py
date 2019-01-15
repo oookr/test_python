@@ -19,7 +19,7 @@ words = ['word']
 for hit_word, hit_sentence in watch(fn, words):
     print("Found %r in line: %r" % (hit_word, hit_sentence))
 """
-    help this (tail-f.py and coroutines.py)
+    help with (tail-f.py and coroutines.py)
     https://stackoverflow.com/questions/1703640/how-to-implement-a-pythonic-equivalent-of-tail-f?answertab=votes#tab-top 
     
 """
