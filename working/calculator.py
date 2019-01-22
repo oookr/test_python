@@ -1,6 +1,7 @@
 from tkinter import *
+import math
 
-tk=Tk()
+tk = Tk()
 tk.title("Calculator")
 tk.geometry()
 
